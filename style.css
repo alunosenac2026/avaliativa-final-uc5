@@ -1,0 +1,134 @@
+/* ========================================
+   DESBRAVA
+   UC5 - Front-End em Projetos Web
+   ======================================== */
+
+
+/* ========================================
+   1. RESET
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   2. CONFIGURAÇÕES GERAIS
+   ======================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f7f3;
+    color: #1f2933;
+}
+
+
+/* ========================================
+   3. ELEMENTOS GERAIS
+   ======================================== */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+
+/* ========================================
+   4. CONTAINER
+   ======================================== */
+
+.container {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   5. TIPOGRAFIA
+   ======================================== */
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    max-width: 700px;
+}
+
+
+/* ========================================
+   6. BOTÕES
+   ======================================== */
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   7. RESPONSIVIDADE BASE
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+}
+
