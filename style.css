@@ -66,10 +66,65 @@ textarea {
     width: min(1120px, 90%);
     margin: 0 auto;
 }
+/* ========================================
+   5. HEADER E NAVEGAÇÃO
+   ======================================== */
 
+.site-header {
+    background-color: #1f2933;
+    color: #ffffff;
+    border-bottom: 1px solid #374151;
+}
+
+.navbar {
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-list a {
+    position: relative;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #d6b36a;
+}
+
+.nav-list a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #d6b36a;
+    transition: width 0.3s ease;
+}
+
+.nav-list a:hover::after {
+    width: 100%;
+}
 
 /* ========================================
-   5. TIPOGRAFIA
+   6. TIPOGRAFIA
    ======================================== */
 
 h1,
@@ -96,7 +151,7 @@ p {
 
 
 /* ========================================
-   6. BOTÕES
+   7. BOTÕES
    ======================================== */
 
 .btn {
@@ -113,7 +168,7 @@ p {
 
 
 /* ========================================
-   7. RESPONSIVIDADE BASE
+   8. RESPONSIVIDADE BASE
    ======================================== */
 
 @media (max-width: 768px) {
