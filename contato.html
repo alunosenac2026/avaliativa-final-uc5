@@ -2,69 +2,99 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
-    
-    <meta name="description"
-        content="Entre em contato com a DESBRAVA e conte como você imagina sua próxima viagem.">
+
+    <meta
+        name="description"
+        content="Entre em contato com a DESBRAVA e conte como você imagina sua próxima viagem."
+    >
 
     <title>Contato | DESBRAVA</title>
+
 </head>
+
 
 <body>
 
+
     <!-- CABEÇALHO -->
+
     <header class="site-header">
 
-    <nav class="navbar container">
+        <nav class="navbar container">
 
-        <a href="index.html" class="logo" aria-label="Página inicial da DESBRAVA">
-            DESBRAVA
-        </a>
+            <a
+                href="index.html"
+                class="logo"
+                aria-label="Página inicial da DESBRAVA"
+            >
+                DESBRAVA
+            </a>
 
-        <ul class="nav-list">
 
-            <li>
-                <a href="index.html">Início</a>
-            </li>
+            <ul class="nav-list">
 
-            <li>
-                <a href="destinos.html">Destinos</a>
-            </li>
+                <li>
+                    <a href="index.html">
+                        Início
+                    </a>
+                </li>
 
-            <li>
-                <a href="pacotes.html">Pacotes</a>
-            </li>
+                <li>
+                    <a href="destinos.html">
+                        Destinos
+                    </a>
+                </li>
 
-            <li>
-                <a href="experiencias.html">Experiências</a>
-            </li>
+                <li>
+                    <a href="pacotes.html">
+                        Pacotes
+                    </a>
+                </li>
 
-            <li>
-                <a href="sobre.html">Sobre nós</a>
-            </li>
+                <li>
+                    <a href="experiencias.html">
+                        Experiências
+                    </a>
+                </li>
 
-            <li>
-                <a href="contato.html">Contato</a>
-            </li>
+                <li>
+                    <a href="sobre.html">
+                        Sobre nós
+                    </a>
+                </li>
 
-        </ul>
+                <li>
+                    <a href="contato.html">
+                        Contato
+                    </a>
+                </li>
 
-    </nav>
+            </ul>
 
-</header>
+        </nav>
+
+    </header>
 
 
     <!-- CONTEÚDO PRINCIPAL -->
+
     <main>
 
+
         <!-- INTRODUÇÃO -->
-        <section>
 
-            <div>
+        <section class="section">
 
-                <p>CONTATO</p>
+            <div class="container section-heading">
+
+                <p class="section-label">
+                    CONTATO
+                </p>
 
                 <h1>
                     Conte para a DESBRAVA o que você quer viver.
@@ -81,26 +111,32 @@
         </section>
 
 
-        <!-- CONTATO -->
-        <section>
+        <!-- FORMULÁRIO -->
 
-            <!-- FORMULÁRIO -->
-            <div>
+        <section class="section section-alt">
 
-                <h2>
-                    Vamos começar a planejar.
-                </h2>
+            <div class="container">
 
-                <p>
-                    Preencha as informações abaixo e conte um pouco
-                    sobre a sua próxima viagem.
-                </p>
+                <div class="section-heading">
+
+                    <h2>
+                        Vamos começar a planejar.
+                    </h2>
+
+                    <p>
+                        Preencha as informações abaixo e conte um pouco
+                        sobre a sua próxima viagem.
+                    </p>
+
+                </div>
 
 
-                <form>
+                <form class="contact-form">
+
 
                     <!-- NOME -->
-                    <div>
+
+                    <div class="contact-form-group">
 
                         <label for="nome">
                             Nome
@@ -112,13 +148,15 @@
                             name="nome"
                             placeholder="Digite seu nome"
                             autocomplete="name"
-                            required>
+                            required
+                        >
 
                     </div>
 
 
                     <!-- E-MAIL -->
-                    <div>
+
+                    <div class="contact-form-group">
 
                         <label for="email">
                             E-mail
@@ -130,3 +168,91 @@
                             name="email"
                             placeholder="Digite seu e-mail"
                             autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- DESTINO -->
+
+                    <div class="contact-form-group">
+
+                        <label for="destino">
+                            Destino
+                        </label>
+
+                        <input
+                            type="text"
+                            id="destino"
+                            name="destino"
+                            placeholder="Para onde você gostaria de ir?"
+                        >
+
+                    </div>
+
+
+                    <!-- MENSAGEM -->
+
+                    <div class="contact-form-group">
+
+                        <label for="mensagem">
+                            Conte um pouco sobre sua viagem
+                        </label>
+
+                        <textarea
+                            id="mensagem"
+                            name="mensagem"
+                            placeholder="Conte para a DESBRAVA o que você gostaria de viver..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- BOTÃO -->
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Enviar mensagem
+                    </button>
+
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <section class="cta">
+
+            <div class="container cta-content">
+
+                <p class="section-label">
+                    DESBRAVA
+                </p>
+
+                <h2>
+                    O próximo caminho começa com uma ideia.
+                </h2>
+
+                <p>
+                    Conte o que você procura e vamos descobrir
+                    juntos novas possibilidades.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>
