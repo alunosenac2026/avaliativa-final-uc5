@@ -305,6 +305,7 @@ p {
     text-decoration: underline;
 }
 
+
 /* ========================================
    11. PACOTES
    ======================================== */
@@ -473,10 +474,11 @@ textarea:focus-visible {
         font-size: 1rem;
     }
 
-    .destination-card img {
+    .destination-image {
         height: 220px;
     }
 }
+
 
 /* ========================================
    15. FORMULÁRIO DE CONTATO
@@ -531,6 +533,7 @@ textarea:focus-visible {
     border: none;
     cursor: pointer;
 }
+
 
 /* ========================================
    16. FOOTER
@@ -610,5 +613,4 @@ textarea:focus-visible {
         flex-direction: column;
         align-items: flex-start;
     }
-
 }
