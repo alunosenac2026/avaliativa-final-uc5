@@ -251,51 +251,59 @@ p {
 .destination-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .destination-card {
     overflow: hidden;
     background-color: #ffffff;
+    border: 1px solid #e5e1d8;
     border-radius: 8px;
-    box-shadow: 0 8px 24px rgba(31, 41, 51, 0.08);
+    box-shadow: 0 4px 12px rgba(31, 41, 51, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .destination-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(31, 41, 51, 0.12);
+    box-shadow: 0 8px 20px rgba(31, 41, 51, 0.12);
 }
 
-.destination-card img {
+.destination-image-wrapper {
+    overflow: hidden;
+}
+
+.destination-image {
     width: 100%;
-    height: 280px;
+    height: 220px;
     object-fit: cover;
+    transition: transform 0.4s ease;
 }
 
-.card-content {
+.destination-card:hover .destination-image {
+    transform: scale(1.05);
+}
+
+.destination-content {
     padding: 1.5rem;
 }
 
-.card-content h3 {
+.destination-content h2,
+.destination-content h3 {
     margin-bottom: 0.75rem;
 }
 
-.card-content p {
+.destination-content p {
     margin-bottom: 1rem;
 }
 
-.card-content a,
-.package-card a {
+.destination-content a {
     font-weight: 700;
     color: #8a682c;
 }
 
-.card-content a:hover,
-.package-card a:hover {
+.destination-content a:hover {
     text-decoration: underline;
 }
-
 
 /* ========================================
    11. PACOTES
@@ -601,69 +609,6 @@ textarea:focus-visible {
     .footer-bottom {
         flex-direction: column;
         align-items: flex-start;
-    }
-
-}
-
-/* ========================================
-   18. CARDS DE DESTINOS
-   ======================================== */
-
-.destination-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-}
-
-.destination-card {
-    background-color: #ffffff;
-    border: 1px solid #e5e1d8;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(31, 41, 51, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.destination-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(31, 41, 51, 0.12);
-}
-
-.destination-image {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-}
-
-.destination-card:hover .destination-image {
-    transform: scale(1.05);
-}
-
-.destination-image-wrapper {
-    overflow: hidden;
-}
-
-.destination-content {
-    padding: 1.5rem;
-}
-
-.destination-content h3 {
-    margin-bottom: 0.5rem;
-}
-
-.destination-content p {
-    margin-bottom: 1rem;
-}
-
-@media (max-width: 768px) {
-
-    .destination-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .destination-image {
-        height: 240px;
     }
 
 }
